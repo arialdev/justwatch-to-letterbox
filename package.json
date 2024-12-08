@@ -2,9 +2,9 @@
   "name": "justwatch-to-letterbox",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
-    "start": "node --import tsx index.ts"
+    "start": "node --import tsx --env-file=.env src/index.ts"
   },
   "keywords": [],
   "author": "arialdev",
@@ -14,5 +14,8 @@
     "@biomejs/biome": "1.9.4",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@types/node": "^22.10.1"
   }
 }

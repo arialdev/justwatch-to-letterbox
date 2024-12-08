@@ -1,11 +1,33 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
+    "baseUrl": "./",
+    "paths": {
+      "@src/*": ["src/*"]
+    },
     "esModuleInterop": true,
-    "target": "ES6",
-    "moduleResolution": "nodenext",
-    "sourceMap": true,
-    "outDir": "dist",
+    "skipLibCheck": true,
+    "target": "es2022",
+    "allowJs": false,
+    "types": ["node"],
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "noEmit": true,
+    "lib": [
+      "es2022"
+    ]
   },
-  "lib": ["ESNext"]
+  // "include": [
+  //   "**/*.ts",
+  //   "**/*.tsx"
+  // ],
+  // "exclude": [
+  //   "node_modules"
+  // ]
 }
